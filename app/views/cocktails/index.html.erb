@@ -5,14 +5,15 @@
   <% @cocktails.each do |cocktail| %>
     <ul>
       <div class="card-product">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg">
+        <%= cl_image_tag cocktail.photo %>
         <div class="card-product-infos">
-          <h2>Cocktail.name</h2>
+          <h2><class="name"></Cocktail></h2>
           <%= link_to cocktail.name, cocktail_path(cocktail.id) %>
         </div>
       </div>
     </ul>
   <% end %>
+
 </ul>
 
 <hr>
